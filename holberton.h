@@ -1,19 +1,31 @@
-#ifndef _HOLBERTON_H_
-#define _HOLBERTON_H_
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
+/* --- libraries --- */
 
 #include <stdarg.h>
+#include <unistd.h>
 #include <stdlib.h>
+#include <stdarg.h>
+/**
 
-typedef struct print
+ * struct print - struct for conversion specifiers
+ * @print: struct print
+ * @p: print function specified
+ */
+
+typedef struct check
 {
+
 	char *type;
-	int (*func)(va_list);
-} print_t;
+	int (*print_function_anything)();
+
+} print_f;
 
 int _printf(const char *format, ...);
-int print_c(va_list c);
-int print_s(va_list s);
-int print_per(va_list p);
-int print_di(va_list di);
+int _putchar(char c);
+int print_char(va_list argument);
+int print_string(va_list argument);
 
-#ifndef
+
+#endif /* HOLBERTON_H */
