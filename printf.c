@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdarg.h>
 #include "holberton.h"
-
 /**
  * _printf - produces output according to a format
  * @format: character string
@@ -18,7 +15,6 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
-
 	va_start(argument, format);
 	i = 0;
 	while (format != NULL && format[i] != '\0')
@@ -32,23 +28,21 @@ int _printf(const char *format, ...)
 				{
 					len = len + characters[j].print_function_anything(argument);
 					i++;
-				}
-				j++;
+				} j++;
 			}
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			_putchar('%');
 			i++;
+			len = len + 1;
 		}
 		else
 		{
 			_putchar(format[i]);
 			len = len + 1;
-		}
-		i++;
+		} i++;
 	}
-
 	va_end(argument);
 	return (len);
 }
