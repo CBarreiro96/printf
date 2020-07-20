@@ -1,18 +1,18 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 
-/* --- libraries --- */
+/* ---- libraries --- */
 
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
-/**
 
- * struct print - struct for conversion specifiers
- * @print: struct print
- * @p: print function specified
- */
+/**
+* struct check - struct for conversion specifiers
+* @type: struct check
+* @print_function_anything: print function specified
+*/
 
 typedef struct check
 {
