@@ -1,3 +1,29 @@
+NAME
+_printf - formatted output conversion
+
+SYNOPSIS
+
+#include "Holberton.h"
+
+int _printf(const char *format, ...);
+
+#include <stdarg.h>
+	
+DESCRIPTION
+    A textual description of the functioning of the command or function.
+EXAMPLES
+    Some examples of common usage.
+SEE ALSO
+    A list of related commands or functions.
+BUGS
+    List known bugs.
+AUTHOR
+   Specify your contact information.
+COPYRIGHT
+    Specify your copyright information.
+
+
+
 .TH man 3 "19 July 2020" "0.32" "_printf man page"
 .SH NAME
 .B _printf
