@@ -9,6 +9,7 @@ int _printf(const char *format, ...)
 	va_list argument;
 	unsigned int i, j;
 	unsigned int len = 0;
+	unsigned int others = 0;
 
 	print_f characters[] = {
 		{"c", print_char},
@@ -27,8 +28,14 @@ int _printf(const char *format, ...)
 				if (format[i + 1] == characters[j].type[0])
 				{
 					len = len + characters[j].print_function_anything(argument);
+					others = 1;
 					i++;
 				} j++;
+			}
+			if (others == 0)
+			{
+				_putchar(format[i]);
+				len = len + 1;
 			}
 		}
 		else if (format[i] == '%' && format[i + 1] == '%')
