@@ -7,6 +7,10 @@
 .PP int _printf(const char *format, ...);
 
 Print ARGUMENT(s) according to FORMAT as a string before the "%"
+Return the number of characters printed (excluding the null byte used to end the output strings)
+FORMAT is a character string. The format string is composed of zero or more directives. See man 3 printf.
+
+Converions specifiers
 
 [c] character.
 [d] or [i]: Signed decimal integer.
@@ -23,6 +27,14 @@ Print ARGUMENT(s) according to FORMAT as a string before the "%"
 [p] Pointer address. [n] Nothing printed.
 [%] Character.
 
+The function does not reproduce the buffer handling of the C library printf function.
+The function does not handle the flag characters:
+[none]	print normally (right justify, space fill)
+[-] 	left justify
+[0]	leading zero fill
+[+]	print plus on positive numbers.
+
+The function does not handle field with, precision, and the length modifiers.
 
 .SH DESCRIPTION
 This function is a replicate of printf of C languajes. Refer to printf(3).
