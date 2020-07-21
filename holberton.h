@@ -26,6 +26,8 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list argument);
 int print_string(va_list argument);
+int print_dec(va_list argument);
+int print_int(va_list argument);
 
 
 #endif /* HOLBERTON_H */
