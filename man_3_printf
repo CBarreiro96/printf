@@ -1,4 +1,3 @@
-
 .TH man 3 "19 July 2020" "0.32" "_printf man page"
 .SH NAME
 .B _printf formmated output conversion and print data
@@ -30,4 +29,5 @@ This function is a replicate of printf of C languajes. Refer to printf(3).
 
 .SH AUTHOR(s)
 
-Carlos Acero,Camilo Barreiro
+Camilo Barreiro, Carlos A. Acero
+Holberton School
