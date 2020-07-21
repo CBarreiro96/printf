@@ -7,14 +7,9 @@
 int _printf(const char *format, ...)
 {
 	va_list argument;
-	unsigned int i, j;
-	unsigned int len = 0;
-	unsigned int others = 0;
+	unsigned int i, j, len = 0, others = 0;
 
-	print_f characters[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{NULL, NULL}
+	print_f characters[] = { {"c", print_char}, {"s", print_string}, {NULL, NULL}
 	};
 	va_start(argument, format);
 	i = 0;
