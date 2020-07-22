@@ -7,45 +7,25 @@
 int _printf(const char *format, ...)
 {
 	va_list argument;
-	unsigned int i, j, len = 0, others = 0;
+	int i = 0, prints;
 
-	print_f characters[] = { {"c", print_char}, {"s", print_string},
-	{"d", print_dec}, {"i", print_int}, {NULL, NULL}
+	print_f characters[] = {
+		{"d", print_dec},
+		{"i", print_int},
+		{"c", print_char},
+		{"s", print_string},
+		{NULL, NULL}
 	};
-	va_start(argument, format);
+	
 	i = 0;
-	while (format != NULL && format[i] != '\0')
+	if (!format || format[i] == '\n' || format[i] == '\0' ||
+	   (format[i] == '%' && !format[i + 1]))
 	{
-		if (format[i] == '%' && format[i + 1] != '%')
-		{
-			j = 0;
-			while (characters[j].print_function_anything != NULL)
-			{
-				if (format[i + 1] == characters[j].type[0])
-				{
-					len = len + characters[j].print_function_anything(argument);
-					others = 1;
-					i++;
-				} j++;
-			}
-			if (others == 0)
-			{
-				_putchar(format[i]);
-				len = len + 1;
-			}
-		}
-		else if (format[i] == '%' && format[i + 1] == '%')
-		{
-			_putchar('%');
-			i++;
-			len = len + 1;
-		}
-		else
-		{
-			_putchar(format[i]);
-			len = len + 1;
-		} i++;
+		return (-1);
 	}
+	va_start(argument, format);
+	prints = compare_function(format, characters, argument);
 	va_end(argument);
-	return (len);
+	return (prints);
 }
+
