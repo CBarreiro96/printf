@@ -10,8 +10,8 @@ int _printf(const char *format, ...)
 	unsigned int i, j, len = 0, others = 0;
 
 	print_f characters[] = { {"c", print_char}, {"s", print_string},
-	{"d", print_dec}, {"i", print_int}, {NULL, NULL}
-	};
+	{"d", print_dec}, {"i", print_int}, {NULL, NULL} };
+	
 	va_start(argument, format);
 	i = 0;
 	while (format != NULL && format[i] != '\0')
@@ -26,7 +26,8 @@ int _printf(const char *format, ...)
 					len = len + characters[j].print_function_anything(argument);
 					others = 1;
 					i++;
-				} j++;
+				} 
+				j++;
 			}
 			if (others == 0)
 			{
