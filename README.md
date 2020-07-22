@@ -1,7 +1,7 @@
 # :star2: C - printf :star2:
+![Flowchart](https://user-images.githubusercontent.com/66263776/88123639-ecfdb300-cb90-11ea-930f-31a2f0a35b9e.jpeg)
 ## :books: Resource :books:
 * [Secrets of printf](https://www.cypress.com/file/54761/download "PDF secret of printf").
-* [Flowcharts](https://intranet.hbtn.io/concepts/130 "Learn to flowchart")
 * [Secrets of printf(): C Programming](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s "Video about secret programming")
 ### Note:
 If you like to know more about printf, you can write in your terminal the follow:
