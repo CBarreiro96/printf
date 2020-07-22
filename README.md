@@ -1,7 +1,7 @@
 # :star2: C - printf :star2:
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66263776/88123639-ecfdb300-cb90-11ea-930f-31a2f0a35b9e.jpeg" width="100" height= "100">
+  <img src="https://user-images.githubusercontent.com/66263776/88123639-ecfdb300-cb90-11ea-930f-31a2f0a35b9e.jpeg" width="200" height= "300">
 </p>
 
 ## :books: Resource :books:
