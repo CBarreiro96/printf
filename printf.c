@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 		{"s", print_string},
 		{NULL, NULL}
 	};
-	
+
 	i = 0;
 	if (!format || format[i] == '\n' || format[i] == '\0' ||
 	   (format[i] == '%' && !format[i + 1]))
@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 		return (-1);
 	}
 	va_start(argument, format);
-	prints = compare_function(format, characters, argument);
+	prints = comp_func(format, characters, argument);
 	va_end(argument);
 	return (prints);
 }

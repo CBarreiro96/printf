@@ -1,6 +1,17 @@
 #include "holberton.h"
 
-int compare_function(const char *format, print_f characters[], va_list argument)
+/**
+* comp_func - function to compare arguments
+* @format : print format
+* @characters: string
+* @argument : argument to compare
+* Return: len
+* Description: Function to compare arguments receiving
+* a string
+*
+**/
+
+int comp_func(const char *format, print_f characters[], va_list argument)
 {
 	unsigned int i = 0, j, len = 0, others = 0;
 
@@ -36,5 +47,5 @@ int compare_function(const char *format, print_f characters[], va_list argument)
 			len = len + 1;
 		} i++;
 	}
-	return(len);
+	return (len);
 }

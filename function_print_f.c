@@ -134,4 +134,3 @@ int print_int(va_list argument)
 
 	return (i);
 }
-
