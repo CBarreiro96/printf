@@ -22,7 +22,7 @@ typedef struct check
 
 } print_f;
 
-int compare_function(const char *format, print_f characters[], va_list argument);
+int comp_func(const char *format, print_f characters[], va_list argument);
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_char(va_list argument);
