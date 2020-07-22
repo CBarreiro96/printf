@@ -1,5 +1,5 @@
 # :star2: C - printf :star2:
-![Flowchart](https://user-images.githubusercontent.com/66263776/88123639-ecfdb300-cb90-11ea-930f-31a2f0a35b9e.jpeg)
+![Flowchart](https://user-images.githubusercontent.com/66263776/88123639-ecfdb300-cb90-11ea-930f-31a2f0a35b9e.jpeg width="100" height="100")
 ## :books: Resource :books:
 * [Secrets of printf](https://www.cypress.com/file/54761/download "PDF secret of printf").
 * [Secrets of printf(): C Programming](https://www.youtube.com/watch?v=Y9kUWsyyChk&t=319s "Video about secret programming")
