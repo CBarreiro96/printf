@@ -29,6 +29,7 @@ int print_char(va_list argument);
 int print_string(va_list argument);
 int print_dec(va_list argument);
 int print_int(va_list argument);
+int print_binary(va_list argument);
 
 
 #endif /* HOLBERTON_H */
