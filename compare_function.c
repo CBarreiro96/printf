@@ -26,7 +26,6 @@ int comp_func(const char *format, print_f characters[], va_list argument)
 				{
 					len = len + characters[j].print_function_anything(argument);
 					others = 1;
-					i++;
 				} j++;
 			}
 			if (others == 0)
@@ -45,7 +44,8 @@ int comp_func(const char *format, print_f characters[], va_list argument)
 		{
 			_putchar(format[i]);
 			len = len + 1;
-		} i++;
+		} 
+		i++;
 	}
 	return (len);
 }
