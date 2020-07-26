@@ -22,7 +22,7 @@ int comp_func(const char *format, print_f characters[], va_list argument)
 			j = 0;
 			while (characters[j].print_function_anything != NULL)
 			{
-				if (format[i + 1] == characters[j].type[0])
+				if (format[i + 1] == characters[j].type[0] && format[i] == '%')
 				{
 					len = len + characters[j].print_function_anything(argument);
 					others = 1;
