@@ -50,6 +50,13 @@ Your code should use the Betty style. It will be checked using [betty-style.pl](
   - You might want to look at the `gcc` flag `-Wno-format` when testing with your `_printf` and the standard `printf`.
 
 *******************************************************************************
+## Format Specifier
+Function name | Description | Format Specifier
+--- | --- | ---
+`function_print_f.c` | print a string, char, integer | `%s` `%c` `%i`
+`advance.c` | converts an integer to binary | `%b`
+
+******************************************************************************
 
 ### Example of test file that can be used:
 ```
