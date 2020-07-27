@@ -1,4 +1,9 @@
 #include "holberton.h"
+/**
+*print_binary- Convert to binary
+* @argument: character to print
+* Return: number of characters printed
+*/
 
 int print_binary(va_list argument)
 {
