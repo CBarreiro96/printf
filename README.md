@@ -53,7 +53,7 @@ Your code should use the Betty style. It will be checked using [betty-style.pl](
 ## Format Specifier
 Function name | Description | Format Specifier
 --- | --- | ---
-`function_print_f.c` | print a string, char, integer | `%s` `%c` `%i`
+`function_print_f.c` | print a string, char, integer & digit | `%s` `%c` `%i` `%d`
 `advance.c` | converts an integer to binary | `%b`
 
 ******************************************************************************
