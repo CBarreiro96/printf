@@ -51,17 +51,6 @@ Your code should use the Betty style. It will be checked using [betty-style.pl](
 
 *******************************************************************************
 
-## Format Specifier
-Function name | Description | Format Specifier
---- | --- | ---
-`print_char` | Prints a character | `%c`
-`print_mod` | Prints a % | `%%`
-`print_digit` | Prints an integer | `%d` & `%i`
-`print_string` | Prints a string | `%s`
-`print_binary` | Prints a binary, custom specifier | `%b`
-
-*******************************************************************************
-
 ### Example of test file that can be used:
 ```
 farrukh@ubuntu:~/printf$ cat main.c
